@@ -9,7 +9,8 @@ var p = require('gulp-load-plugins')();
 
 
 gulp.task('styles',function() {
-  gulp.src('../../developer.redhat.com/stylesheets/app.scss')
+  gulp.src('../developer.redhat.com/stylesheets/app.scss')
+    .pipe(p.debug())
     .pipe(p.plumber({errorHandler: p.notify.onError('Error: <%= error.message %>')}))
     .pipe(p.sass())
     .pipe(p.replace(/cdn\(/g, 'url(')) // replace cdn( with url( for local dev
@@ -54,5 +55,5 @@ gulp.task('font',function() {
 });
 
 gulp.task('default', ['browser-sync'] ,function() {
-  gulp.watch('../stylesheets/*.scss',['styles']);
+  gulp.watch('../developer.redhat.com/stylesheets/*.scss',['styles']);
 });

@@ -22,7 +22,7 @@ Do this only once:
 ## To Run
 
 1. Make sure you are running the awestruct server via `rake preview` in the root directory
-2. in the `_gulp` folder type `gulp` to run browsersync - the peroxided version of the site should open in your browser. If you view the terminal, you will see links to **local** and **external** - visit the **external** URL on any device or machine connected to your network.
+2. in the `gulp` project folder type `gulp` to run browsersync - the peroxided version of the site should open in your browser. If you view the terminal, you will see links to **local** and **external** - visit the **external** URL on any device or machine connected to your network.
 
 
 Watch the full workflow here: 
